@@ -1,15 +1,17 @@
 {
-  "name": "@superkeyio/block-gobbler",
-  "version": "0.0.0",
+  "name": "@aloelabs/block-gobbler",
+  "version": "0.0.1",
   "description": "oclif example Hello World CLI",
   "author": "Matt Evenson @mattevenson",
   "bin": {
     "block-gobbler": "./bin/run"
   },
-  "homepage": "https://github.com/mattevenson/hello-world",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "git://github.com/superkeyio/tap-ethereum.git",
+  "repository": "https://github.com/aloelabs/block-gobbler.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "files": [
     "/bin",
     "/dist",

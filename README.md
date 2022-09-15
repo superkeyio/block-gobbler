@@ -16,11 +16,11 @@ oclif example Hello World CLI
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @superkeyio/block-gobbler
+$ npm install -g @aloelabs/block-gobbler
 $ block-gobbler COMMAND
 running command...
 $ block-gobbler (--version)
-@superkeyio/block-gobbler/0.0.0 darwin-x64 node-v16.15.0
+@aloelabs/block-gobbler/0.0.1 darwin-arm64 node-v18.0.0
 $ block-gobbler --help [COMMAND]
 USAGE
   $ block-gobbler COMMAND
@@ -29,9 +29,6 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`block-gobbler blocks`](#block-gobbler-blocks)
-* [`block-gobbler events [FILE]`](#block-gobbler-events-file)
-* [`block-gobbler getters`](#block-gobbler-getters)
 * [`block-gobbler help [COMMAND]`](#block-gobbler-help-command)
 * [`block-gobbler plugins`](#block-gobbler-plugins)
 * [`block-gobbler plugins:install PLUGIN...`](#block-gobbler-pluginsinstall-plugin)
@@ -42,78 +39,6 @@ USAGE
 * [`block-gobbler plugins:uninstall PLUGIN...`](#block-gobbler-pluginsuninstall-plugin-1)
 * [`block-gobbler plugins:uninstall PLUGIN...`](#block-gobbler-pluginsuninstall-plugin-2)
 * [`block-gobbler plugins update`](#block-gobbler-plugins-update)
-
-## `block-gobbler blocks`
-
-describe the command here
-
-```
-USAGE
-  $ block-gobbler blocks --rpc <value>
-
-FLAGS
-  --rpc=<value>  (required)
-
-DESCRIPTION
-  describe the command here
-```
-
-_See code: [dist/commands/blocks.ts](https://github.com/superkeyio/tap-ethereum/blob/v0.0.0/dist/commands/blocks.ts)_
-
-## `block-gobbler events [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ block-gobbler events [FILE] --rpc <value> --address <value> --event <value> [--startBlock <value>]
-    [--endBlock <value>] [--confirmations <value>] [--abiFile <value>] [--abi <value>] [--maxBlockRange <value>]
-    [--concurrency <value>]
-
-FLAGS
-  --abi=<value>
-  --abiFile=<value>
-  --address=<value>        (required)
-  --concurrency=<value>    [default: 100]
-  --confirmations=<value>  [default: 12]
-  --endBlock=<value>
-  --event=<value>          (required)
-  --maxBlockRange=<value>  [default: 10000] Max block range supported by RPC node's eth_getLogs
-  --rpc=<value>            (required)
-  --startBlock=<value>
-
-DESCRIPTION
-  describe the command here
-```
-
-_See code: [dist/commands/events.ts](https://github.com/superkeyio/tap-ethereum/blob/v0.0.0/dist/commands/events.ts)_
-
-## `block-gobbler getters`
-
-describe the command here
-
-```
-USAGE
-  $ block-gobbler getters --rpc <value> --address <value> -g <value> [--startBlock <value>] [--endBlock
-    <value>] [--confirmations <value>] [--abiFile <value>] [--abi <value>] [--batchSize <value>] [--concurrency <value>]
-
-FLAGS
-  -g, --getter=<value>     (required)
-  --abi=<value>
-  --abiFile=<value>
-  --address=<value>        (required)
-  --batchSize=<value>      [default: 10]
-  --concurrency=<value>    [default: 100]
-  --confirmations=<value>  [default: 12]
-  --endBlock=<value>
-  --rpc=<value>            (required)
-  --startBlock=<value>
-
-DESCRIPTION
-  describe the command here
-```
-
-_See code: [dist/commands/getters.ts](https://github.com/superkeyio/tap-ethereum/blob/v0.0.0/dist/commands/getters.ts)_
 
 ## `block-gobbler help [COMMAND]`
 
